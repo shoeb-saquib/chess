@@ -453,11 +453,11 @@ class game:
             screen.blit(surf, surf.get_rect(center=(self.chess_board.center_pos)))
 
     def save(self):
-        with open('chess\save_file.txt', 'wb') as save_file:
+        with open('save_file.txt', 'wb') as save_file:
             pickle.dump(self, save_file)
 
 try:
-    with open('chess\save_file.txt', 'rb') as save_file:
+    with open('save_file.txt', 'rb') as save_file:
         main_game = pickle.load(save_file)
 except:
     main_game = game(True, False)
