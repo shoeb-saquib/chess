@@ -17,7 +17,7 @@ screen_base = 1620
 screen = pygame.display.set_mode((screen_base, screen_height/40+screen_height))
 screen.fill('black')
 pygame.display.set_caption('Chess')
-sprite_sheet = pygame.image.load('chess\sprites\chess_pieces.png').convert_alpha()
+sprite_sheet = pygame.image.load('sprites\chess_pieces.png').convert_alpha()
 get_sprite_sheet(sprite_sheet)
 
 class square:
